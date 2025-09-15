@@ -75,6 +75,6 @@ ENV BOOTSTRAP_ADMIN_PASSWORD=${BOOTSTRAP_ADMIN_PASSWORD}
 COPY --from=intermediate /tmp/sentry-versions/ ./sentry-versions
 
 # Run the bootstrap admin script during build
-RUN node /usr/odk/server/scripts/bootstrap-admin.js
+# RUN node /usr/odk/server/scripts/bootstrap-admin.js
 
 EXPOSE 8383

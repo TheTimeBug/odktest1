@@ -11,6 +11,7 @@ RUN chmod +x files/prebuild/write-version.sh
 RUN files/prebuild/write-version.sh
 
 ARG SKIP_FRONTEND_BUILD
+RUN chmod +x files/prebuild/build-frontend.sh
 RUN files/prebuild/build-frontend.sh
 
 

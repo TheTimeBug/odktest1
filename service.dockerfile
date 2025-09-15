@@ -57,6 +57,7 @@ RUN apt-get update \
         --fund=false --update-notifier=false
 
 COPY server/ /usr/odk/server/
+COPY server/config/ /usr/odk/config/
 COPY files/shared/envsub.awk /scripts/
 COPY files/service/scripts/ ./
 
